@@ -21,17 +21,17 @@ body {
 }
 
 .col-2 {
-    border-right: 1px solid blue;
     position: relative;
 }
 .col-2::before {
     content: "";
-    width: 50%;
+    width: 40%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     border-right: 1px solid blue;
+    border-left: 1px solid blue;
 }
 
 .col-d {
@@ -63,10 +63,10 @@ body {
 }
 
 .col-b {
-    border-top: 1px solid blue;
     position: relative;
 }
 .col-b::before {
+    border-top: 1px solid blue;
     content: "";
     width: 100%;
     height: 50%;
@@ -96,30 +96,30 @@ body {
 }
 .col-j::before {
     content: "";
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    border-left: 1px solid blue;
+    border-right: 1px solid blue;
 }
 
 .col-t {
-    border-right: 1px solid pink;
+    border-right: 1px solid blue;
     position: relative;
 }
 .col-t::before {
     content: "";
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 1px solid pink;
+    border-right: 1px solid blue;
 }
 
 .col-u {
-    border-left: 1px solid pink;
+    border-left: 1px solid blue;
     position: relative;
 }
 .col-u::before {
@@ -129,11 +129,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 1px solid pink;
+    border-right: 1px solid blue;
 }
 
 .col-4 {
-    border-top: 1px solid pink;
+    border-top: 1px solid blue;
     position: relative;
 }
 .col-4::before {
@@ -143,11 +143,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid blue;
 }
 
 .col-3 {
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid blue;
     position: relative;
 }
 .col-3::before {
@@ -157,7 +157,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid blue;
 }
 
 .col-a {
@@ -171,9 +171,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    border-top: 1px solid green;
+    border-top: 1px solid blue;
     border-radius: 5px;
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
 }
 
 .col-a::after {
@@ -181,28 +181,28 @@ body {
     width: 200%;
     height: 200%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    border-top: 1px solid green;
+    top: 55%;
+    left: 55%;
+    border-top: 1px solid blue;
     border-radius: 5px;
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
 }
 
-.col-7 {
+.col-f {
     position: relative;
     overflow: hidden;
 }
 
-.col-7::after {
+.col-f::after {
     content: "";
     width: 200%;
     height: 200%;
     position: absolute;
     top: 50%;
     left: 50%;
-    border-top: 1px solid green;
+    border-top: 1px solid blue;
     border-radius: 5px;
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
 }
 
 .col-c {
@@ -216,9 +216,9 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 1px solid green;
+    border-top: 1px solid blue;
     border-radius: 5px;
-    border-right: 1px solid green;
+    border-right: 1px solid blue;
 }
 
 .col-c::after {
@@ -226,11 +226,11 @@ body {
     width: 200%;
     height: 200%;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    border-top: 1px solid green;
+    top: 55%;
+    right: 45%;
+    border-top: 1px solid blue;
     border-radius: 5px;
-    border-right: 1px solid green;
+    border-right: 1px solid blue;
 }
 
 .col-m {
@@ -244,9 +244,9 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid blue;
     border-radius: 5px;
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
 }
 
 .col-m::after {
@@ -256,7 +256,303 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid blue;
     border-radius: 5px;
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
+}
+
+.col-n {
+    position: relative;
+    overflow: hidden;
+}
+.col-n::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-n::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-h {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-h::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    border-top: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-k {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-k::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 50%;
+    left: 55%;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-left: 1px solid blue;
+}
+
+.col-l {
+    position: relative;
+    overflow: hidden;
+}
+
+.col-l::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 45%;
+    right: 45%;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-1 {
+    position: relative;
+    overflow: hidden;
+}
+.col-1::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 1px solid blue;
+}
+
+.col-1::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-top: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-z {
+    position: relative;
+    overflow: hidden;
+}
+.col-z::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid blue;
+}
+
+.col-z::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 1px solid blue;
+    border-radius: 5px;
+    border-left: 1px solid blue;
+}
+
+.col-x {
+    position: relative;
+    overflow: hidden;
+}
+.col-x::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid blue;
+}
+
+.col-x::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-left: 1px solid blue;
+}
+
+.col-y {
+    position: relative;
+    overflow: hidden;
+}
+.col-y::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 1px solid blue;
+}
+.col-y::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    border-bottom: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-6 {
+    position: relative;
+    overflow: hidden;
+}
+.col-6::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 1px solid blue;
+}
+
+.col-6::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    border-top: 1px solid blue;
+    border-radius: 5px;
+    border-right: 1px solid blue;
+}
+
+.col-7 {
+    position: relative;
+    overflow: hidden;
+}
+.col-7::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1px solid blue;
+}
+
+.col-7::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    border-top: 1px solid blue;
+    border-radius: 5px;
+    border-left: 1px solid blue;
+}
+
+.col-q {
+    border-bottom: 1px solid blue;
+    position: relative;
+}
+.col-q::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid blue;
+}
+
+.col-q::after {
+    content: "";
+    width: 95%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid blue;
+}
+
+.col-9 {
+    border-bottom: 1px solid blue;
+    position: relative;
+}
+.col-9::before {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid blue;
+}
+
+.col-9::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid blue;
+}
+
+.col-r {
+    position: relative;
+}
+.col-r::before {
+    content: "";
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    border: 1px solid pink;
+    background-color: pink;
 }
